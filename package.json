@@ -1,6 +1,6 @@
 {
     "title": "Agency",
-    "name": "startbootstrap-agency",
+    "name": "zhongxing-engineering",
     "version": "7.0.12",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
@@ -12,7 +12,7 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "Agency is a one page HTML theme for Bootstrap.",
+    "description": "北京五洲中兴机电设备开发有限公司官方网站",
     "keywords": [
         "css",
         "sass",
@@ -20,6 +20,8 @@
         "responsive",
         "theme",
         "template"
+        "机电设备开发"
+        "企业官网"
     ],
     "homepage": "https://startbootstrap.com/theme/agency",
     "bugs": {
@@ -27,7 +29,7 @@
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "北京五洲中兴机电设备开发有限公司",
     "contributors": [
         "David Miller (https://davidmiller.io/)"
     ],
