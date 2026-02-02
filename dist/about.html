@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="北京五洲中兴机电设备开发有限公司，2003年在中国五洲工程设计集团工艺装备设计研究所的基础上成立，是中国五洲集团的独资子公司，秉承军工标准，服务国防民生。" />
+        <meta name="author" content="北京五洲中兴机电设备开发有限公司" />
+        <title>关于我们 - 北京五洲中兴机电设备开发有限公司</title>
+        
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        
+        <style>
+            /* 通用样式 */
+            .history-icon {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+            
+            /* 时间线样式 */
+            .timeline-vertical {
+                position: relative;
+                padding-left: 2rem;
+            }
+            .timeline-vertical::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: #007bff;
+            }
+            .timeline-item {
+                position: relative;
+                margin-bottom: 2rem;
+                padding-left: 2rem;
+            }
+            .timeline-item::before {
+                content: '';
+                position: absolute;
+                left: -2.3rem;
+                top: 0.5rem;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: #007bff;
+                border: 3px solid white;
+                box-shadow: 0 0 0 3px #007bff;
+            }
+            
+            /* 卡片悬停效果 */
+            .tech-card, .honor-item, .facility-card, .certificate-item, .patent-item {
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .tech-card:hover, .honor-item:hover, .facility-card:hover, .certificate-item:hover, .patent-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            }
+            
+            /* 特色盒子 */
+            .highlight-box {
+                border-left: 5px solid #ffc107;
+            }
+            
+            /* 占位图片样式（保留备用） */
+            .placeholder-img {
+                height: 200px;
+                background: linear-gradient(135deg, #f8f9fa 25%, #e9ecef 25%, #e9ecef 50%, #f8f9fa 50%, #f8f9fa 75%, #e9ecef 75%);
+                background-size: 20px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #6c757d;
+                border: 2px dashed #dee2e6;
+                border-radius: 8px;
+            }
+            
+            .placeholder-img-sm {
+                height: 150px;
+                background: linear-gradient(135deg, #f8f9fa 25%, #e9ecef 25%, #e9ecef 50%, #f8f9fa 50%, #f8f9fa 75%, #e9ecef 75%);
+                background-size: 15px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #6c757d;
+                border: 2px dashed #dee2e6;
+                border-radius: 8px;
+            }
+            
+            /* 证书网格 */
+            .certificate-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 25px;
+                margin-top: 20px;
+            }
+            
+            .certificate-item, .patent-item {
+                text-align: center;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                border: 1px solid #e9ecef;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+            }
+            
+            .certificate-img-container, .patent-img-container {
+                width: 100%;
+                height: 200px;
+                margin-bottom: 20px;
+                overflow: hidden;
+                border-radius: 8px;
+                background: #f8f9fa;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .certificate-img, .patent-img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transition: transform 0.3s;
+            }
+            
+            .certificate-item:hover .certificate-img,
+            .patent-item:hover .patent-img {
+                transform: scale(1.05);
+            }
+            
+            /* 荣誉奖项样式 */
+            .honor-item {
+                background: white;
+                padding: 0;
+                border-radius: 10px;
+                overflow: hidden;
+                border: 1px solid #e9ecef;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .honor-img-container {
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                background: #f8f9fa;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .honor-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s;
+            }
+            
+            .honor-item:hover .honor-img {
+                transform: scale(1.05);
+            }
+            
+            .honor-content {
+                padding: 20px;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            /* 专利证书板块样式 */
+            .patent-section-title {
+                text-align: center;
+                margin: 60px 0 30px;
+                padding-bottom: 15px;
+                border-bottom: 2px solid #007bff;
+                position: relative;
+            }
+            
+            .patent-section-title::after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 2px;
+                background: #ffc107;
+            }
+            
+            /* 专利证书网格 - 5列布局 */
+            .patent-grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 20px;
+                margin-top: 20px;
+            }
+            
+            /* 响应式调整 */
+            @media (min-width: 1200px) {
+                .masthead {
+                    background-position: center 30%;
+                }
+                .patent-grid {
+                    grid-template-columns: repeat(5, 1fr);
+                }
+            }
+            
+            @media (max-width: 1200px) {
+                .patent-grid {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+            
+            @media (max-width: 992px) {
+                .patent-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+            
+            @media (max-width: 768px) {
+                .masthead {
+                    background-attachment: scroll;
+                    min-height: 60vh;
+                }
+                .masthead-heading {
+                    font-size: 2.2rem !important;
+                }
+                .masthead-subheading {
+                    font-size: 1.2rem !important;
+                }
+                .timeline-vertical {
+                    padding-left: 1rem;
+                }
+                .timeline-item {
+                    padding-left: 1rem;
+                }
+                .timeline-item::before {
+                    left: -1.3rem;
+                }
+                .certificate-grid {
+                    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                    gap: 15px;
+                }
+                .honor-img-container {
+                    height: 180px;
+                }
+                .certificate-img-container,
+                .patent-img-container {
+                    height: 160px;
+                }
+                .patent-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            
+            @media (max-width: 576px) {
+                .patent-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+            
+            /* 统计数据 */
+            .stat-number {
+                font-size: 3rem;
+                font-weight: 700;
+                color: #007bff;
+                line-height: 1;
+            }
+            
+            /* 章节间距 */
+            .page-section {
+                padding: 6rem 0;
+            }
+            
+            /* 生产设施图片样式 */
+            .facility-img {
+                height: 250px;
+                object-fit: cover;
+                transition: transform 0.5s;
+            }
+            
+            .facility-card:hover .facility-img {
+                transform: scale(1.05);
+            }
+            
+            .facility-caption {
+                border-top: 3px solid #007bff;
+            }
+            
+            /* 公司图片 */
+            .company-photo {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .company-photo img {
+                transition: transform 0.5s;
+                height: 300px;
+                object-fit: cover;
+            }
+            
+            .company-photo:hover img {
+                transform: scale(1.03);
+            }
+            
+            /* 技术图标图片 */
+            .tech-icon-img {
+                height: 150px;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-bottom: 1rem;
+            }
+            
+            @media (max-width: 768px) {
+                .page-section {
+                    padding: 4rem 0;
+                }
+                .stat-number {
+                    font-size: 2.5rem;
+                }
+                .facility-img {
+                    height: 200px;
+                }
+                .company-photo img {
+                    height: 250px;
+                }
+                .certificate-img-container,
+                .patent-img-container {
+                    height: 140px;
+                }
+            }
+        </style>
+    </head>
+    
+    <body id="page-top">
+        <!-- Navigation 导航栏 -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/company/company-logo.png" alt="北京五洲中兴机电设备开发有限公司 Logo" height="40" />
+                    <span class="ms-2 d-none d-md-inline" style="font-weight: bold; color: white;">五洲中兴</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    菜单
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">关于我们</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">特色产品</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Masthead 主横幅 -->
+<header class="masthead" style="
+    background: url('assets/img/banners/about-banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+">
+            <div class="container text-center">
+                <div class="masthead-subheading" style="font-size: 1.5rem; margin-bottom: 1rem; color: #fff;">秉持军工标准，服务国防民生</div>
+                <div class="masthead-heading text-uppercase" style="
+                    font-size: 3rem; 
+                    line-height: 1.2; 
+                    margin-bottom: 2rem;
+                    color: #fff;
+                    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+                ">七十余年军工传承 · 专业技术服务</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#company-intro" style="
+                    padding: 1rem 2rem;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    background-color: #007bff;
+                    border-color: #007bff;
+                ">了解更多</a>
+            </div>
+        </header>
+
+        <!-- 公司统计数据 -->
+        <section class="page-section py-4 bg-light">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <div class="stat-number">70+</div>
+                            <p class="text-muted mb-0">年军工传承</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <div class="stat-number">40+</div>
+                            <p class="text-muted mb-0">项专利技术</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <p class="text-muted mb-0">专业科室</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <div class="stat-number">10640</div>
+                            <p class="text-muted mb-0">平方米实验基地</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Introduction 公司简介 -->
+        <section class="page-section" id="company-intro">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading text-uppercase">公司简介</h2>
+                    <h3 class="section-subheading text-muted">秉持军工标准，服务国防民生</h3>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="company-photo rounded overflow-hidden shadow">
+                            <img src="assets/img/company/company-building.jpg" 
+                                 alt="北京五洲中兴机电设备开发有限公司"
+                                 class="img-fluid w-100"
+                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/007bff/ffffff?text=五洲中兴公司'; this.alt='公司示意图'">
+                            <div class="position-absolute bottom-0 start-0 p-3 bg-dark bg-opacity-75 text-white">
+                                北京五洲中兴机电设备开发有限公司
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="company-intro-box p-4">
+                            <h4 class="text-primary mb-4">北京五洲中兴机电设备开发有限公司</h4>
+                            <p class="lead mb-4">2003年在中国五洲工程设计集团工艺装备设计研究所的基础上成立，是中国五洲集团的独资子公司。</p>
+                            
+                            <div class="row mb-4">
+                                <div class="col-md-6 mb-3">
+                                    <h5 class="text-primary"><i class="fas fa-industry me-2"></i>集团背景</h5>
+                                    <ul class="text-muted">
+                                        <li>工程设计综合甲级资质</li>
+                                        <li>工程勘察综合甲级资质</li>
+                                        <li>工程监理综合甲级资质</li>
+                                        <li>压力容器及压力管道设计资质</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h5 class="text-primary"><i class="fas fa-award me-2"></i>公司资质</h5>
+                                    <ul class="text-muted">
+                                        <li>对外进出口经营权</li>
+                                        <li>依托集团最高资质开展业务</li>
+                                        <li>七十余年军工技术底蕴</li>
+                                        <li>专业人才队伍</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <p class="text-muted">公司主要从事成套生产设备的研发、设计、制造、集成、安装、维保及相关的咨询和服务。下设多个专业科室，汇聚专业人才队伍，用深厚积淀为业务发展筑牢根基，持续为行业提供技术支撑。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 公司组织架构 -->
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <h4 class="text-center mb-4">专业科室设置</h4>
+                        <div class="row text-center">
+                            <div class="col-md-4 mb-4">
+                                <div class="p-3 border rounded">
+                                    <i class="fas fa-cogs fa-2x text-primary mb-3"></i>
+                                    <h5>非标设备设计室</h5>
+                                    <p class="text-muted small">专用设备和产线设计开发</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="p-3 border rounded">
+                                    <i class="fas fa-robot fa-2x text-primary mb-3"></i>
+                                    <h5>自动化控制与信息化室</h5>
+                                    <p class="text-muted small">自动化控制系统设计开发</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="p-3 border rounded">
+                                    <i class="fas fa-flask fa-2x text-primary mb-3"></i>
+                                    <h5>压力容器及模块化集成设计室</h5>
+                                    <p class="text-muted small">容器设计与模块化集成</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="p-3 border rounded">
+                                    <i class="fas fa-desktop fa-2x text-primary mb-3"></i>
+                                    <h5>数字仿真三维可视化设计室</h5>
+                                    <p class="text-muted small">数字化仿真与三维可视化</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="p-3 border rounded">
+                                    <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
+                                    <h5>设备调试及抗爆防护室</h5>
+                                    <p class="text-muted small">设备调试与抗爆防护设计</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Production Facilities 生产设施 -->
+        <section class="page-section bg-light" id="production-facilities">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading text-uppercase">实验基地</h2>
+                    <h3 class="section-subheading text-muted">涿州实验基地，科研创新的坚实后盾</h3>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="facility-card rounded overflow-hidden shadow h-100">
+                            <img src="assets/img/company/zhuozhou-base.jpg" 
+                                 alt="涿州实验基地"
+                                 class="img-fluid w-100 facility-img"
+                                 onerror="this.onerror=null; this.src='assets/img/company/zhuozhou-base-placeholder.jpg';">
+                            <div class="facility-caption p-4 bg-white">
+                                <h5 class="text-primary mb-3">涿州实验基地</h5>
+                                <p class="text-muted mb-0">成立于2005年，占地面积10640平方米，建筑面积5500平方米，为公司科研项目的加工、装配、预调试等工作提供试验场地。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="facility-card rounded overflow-hidden shadow h-100">
+                            <img src="assets/img/company/testing-equipment.jpg" 
+                                 alt="科研试验设备"
+                                 class="img-fluid w-100 facility-img"
+                                 onerror="this.onerror=null; this.src='assets/img/company/testing-equipment-placeholder.jpg';">
+                            <div class="facility-caption p-4 bg-white">
+                                <h5 class="text-primary mb-3">科研试验能力</h5>
+                                <p class="text-muted mb-0">配备先进的加工、装配、检测设备，为新产品研发、技术验证、设备预调试提供完整的试验平台，确保项目质量和可靠性。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="text-center p-3">
+                                    <i class="fas fa-ruler-combined fa-3x text-primary mb-3"></i>
+                                    <h6>占地面积</h6>
+                                    <p class="text-muted small">10640平方米</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="text-center p-3">
+                                    <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                                    <h6>建筑面积</h6>
+                                    <p class="text-muted small">5500平方米</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="text-center p-3">
+                                    <i class="fas fa-calendar-alt fa-3x text-primary mb-3"></i>
+                                    <h6>成立时间</h6>
+                                    <p class="text-muted small">2005年</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development History 发展历程 -->
+        <section class="page-section" id="history">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading text-uppercase">发展历程</h2>
+                    <h3 class="section-subheading text-muted">七十余年技术积淀，与时俱进创新发展</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="timeline-vertical">
+                            <!-- 阶段1 -->
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="text-primary">1950年代起</h4>
+                                    <h5 class="mb-3">军工技术传承</h5>
+                                    <p class="text-muted mb-3">承袭七十余年传统军工技术底蕴，在火炸药生产、弹药装配等领域积累了丰富的技术经验。</p>
+                                </div>
+                            </div>
+                            
+                            <!-- 阶段2 -->
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="text-primary">2003年</h4>
+                                    <h5 class="mb-3">公司成立</h5>
+                                    <p class="text-muted mb-3">在中国五洲工程设计集团工艺装备设计研究所的基础上成立，成为中国五洲集团的独资子公司。</p>
+                                </div>
+                            </div>
+                            
+                            <!-- 阶段3 -->
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="text-primary">2005年</h4>
+                                    <h5 class="mb-3">实验基地建设</h5>
+                                    <p class="text-muted mb-3">涿州实验基地建成，占地面积10640平方米，为公司科研项目提供试验场地。</p>
+                                </div>
+                            </div>
+                            
+                            <!-- 阶段4 -->
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="text-primary">2010年代</h4>
+                                    <h5 class="mb-3">技术创新突破</h5>
+                                    <p class="text-muted mb-3">在药柱压制、自动化装配、抗爆防护等领域取得多项技术突破，获得众多科技奖项。</p>
+                                </div>
+                            </div>
+                            
+                            <!-- 阶段5 -->
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="text-primary">2020年至今</h4>
+                                    <h5 class="mb-3">智能化升级</h5>
+                                    <p class="text-muted mb-3">推进数字化仿真、模块化集成设计、智能检测等技术应用，为产线少人化、无人化和智能化贡献力量。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Technologies 核心技术 -->
+        <section class="page-section bg-light" id="technologies">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading text-uppercase">核心技术</h2>
+                    <h3 class="section-subheading text-muted">七十余年军工技术积淀，行业领先优势</h3>
+                </div>
+                <div class="row">
+                    <!-- 技术1：火炸药生产设备研制 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tech-card h-100 p-4 border rounded">
+                            <div class="tech-icon text-center mb-3">
+                                <img src="assets/img/technologies/explosive-equipment.jpg" 
+                                     alt="火炸药生产设备"
+                                     class="img-fluid tech-icon-img"
+                                     onerror="this.onerror=null; this.src='assets/img/technologies/explosive-equipment-placeholder.jpg';">
+                            </div>
+                            <h5 class="text-center mb-3">火炸药生产设备研制</h5>
+                            <p class="text-muted mb-3">研制各种火炸药生产设备：如多功能罐、结晶设备、光泽机、熔铸药及药球生产设备、粒状药自动化混同设备等。</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary small">技术特点：</h6>
+                                <ul class="text-muted small">
+                                    <li>粒状药混同技术获国防科技进步二等奖</li>
+                                    <li>完全自主知识产权</li>
+                                    <li>连续化、自动化生产工艺</li>
+                                    <li>多种专用设备研制经验</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 技术2：药柱压制设备研制 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tech-card h-100 p-4 border rounded">
+                            <div class="tech-icon text-center mb-3">
+                                <img src="assets/img/technologies/press-machine.jpg" 
+                                     alt="药柱压制设备"
+                                     class="img-fluid tech-icon-img"
+                                     onerror="this.onerror=null; this.src='assets/img/technologies/press-machine-placeholder.jpg';">
+                            </div>
+                            <h5 class="text-center mb-3">药柱压制设备研制</h5>
+                            <p class="text-muted mb-3">研制多种药柱压制设备，包括传火管药饼压制机、导爆管压制机、震源弹起爆药柱压制机，实现了药柱压制的自动化生产。</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary small">技术优势：</h6>
+                                <ul class="text-muted small">
+                                    <li>国内第一台小型全自动压制机</li>
+                                    <li>获得国家发明专利</li>
+                                    <li>改变了小药柱用大压机压制的模式</li>
+                                    <li>自动化生产解决方案</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 技术3：弹药装配及拆分设备研制 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tech-card h-100 p-4 border rounded">
+                            <div class="tech-icon text-center mb-3">
+                                <img src="assets/img/technologies/ammunition-equipment.jpg" 
+                                     alt="弹药装配设备"
+                                     class="img-fluid tech-icon-img"
+                                     onerror="this.onerror=null; this.src='assets/img/technologies/ammunition-equipment-placeholder.jpg';">
+                            </div>
+                            <h5 class="text-center mb-3">弹药装配及拆分设备研制</h5>
+                            <p class="text-muted mb-3">研制开发各种弹药装配生产线，实现了弹药装配的自动化。同时研制多种弹药销毁分解设备，实现废旧弹药安全环保的自动化拆分。</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary small">技术特点：</h6>
+                                <ul class="text-muted small">
+                                    <li>战斗部装配生产线获兵器工业科技进步一等奖</li>
+                                    <li>弹药拆解移动方舱装备于陆军部队</li>
+                                    <li>安全环保的自动化拆分技术</li>
+                                    <li>全流程自动化解决方案</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 技术4：民爆专用设备研制 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tech-card h-100 p-4 border rounded">
+                            <div class="tech-icon text-center mb-3">
+                                <img src="assets/img/technologies/civil-explosive.jpg" 
+                                     alt="民爆专用设备"
+                                     class="img-fluid tech-icon-img"
+                                     onerror="this.onerror=null; this.src='assets/img/technologies/civil-explosive-placeholder.jpg';">
+                            </div>
+                            <h5 class="text-center mb-3">民爆专用设备研制</h5>
+                            <p class="text-muted mb-3">深耕民爆设备多年，研制了雷管、导爆管、引火药头、起爆具等相关生产设备或生产线。相关设备获多项科学技术成果鉴定。</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary small">技术优势：</h6>
+                                <ul class="text-muted small">
+                                    <li>起爆具生产线获多项鉴定证书</li>
+                                    <li>熔化机与混合机列入民爆物品专用生产设备目录</li>
+                                    <li>行业标准产品</li>
+                                    <li>成熟可靠的解决方案</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 技术5：数字化仿真及三维可视化设计 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tech-card h-100 p-4 border rounded">
+                            <div class="tech-icon text-center mb-3">
+                                <img src="assets/img/technologies/digital-simulation.jpg" 
+                                     alt="数字化仿真"
+                                     class="img-fluid tech-icon-img"
+                                     onerror="this.onerror=null; this.src='assets/img/technologies/digital-simulation-placeholder.jpg';">
+                            </div>
+                            <h5 class="text-center mb-3">数字化仿真及三维可视化设计</h5>
+                            <p class="text-muted mb-3">通过构建设备的三维模型，进行机械静力学强度分析、运动学动态分析、疲劳分析等数字化仿真，验证设备设计的可行性。</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary small">技术特点：</h6>
+                                <ul class="text-muted small">
+                                    <li>三维模型构建与分析</li>
+                                    <li>机械静力学强度分析</li>
+                                    <li>运动学动态分析</li>
+                                    <li>三维可视化展示</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 技术6：模块化集成设计 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tech-card h-100 p-4 border rounded">
+                            <div class="tech-icon text-center mb-3">
+                                <img src="assets/img/technologies/modular-design.jpg" 
+                                     alt="模块化集成设计"
+                                     class="img-fluid tech-icon-img"
+                                     onerror="this.onerror=null; this.src='assets/img/technologies/modular-design-placeholder.jpg';">
+                            </div>
+                            <h5 class="text-center mb-3">模块化集成设计</h5>
+                            <p class="text-muted mb-3">构建产线设备模块化集成设计理念，将整条产线分解为多个功能独立、标准统一的模块进行集成设计，快速响应工程建设需求。</p>
+                            <div class="mt-3">
+                                <h6 class="text-primary small">技术优势：</h6>
+                                <ul class="text-muted small">
+                                    <li>缩短安装周期</li>
+                                    <li>功能独立、标准统一的模块</li>
+                                    <li>快速响应工程建设需求</li>
+                                    <li>灵活配置与扩展</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Honors and Certificates 荣誉资质 -->
+        <section class="page-section" id="honors">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading text-uppercase">荣誉资质</h2>
+                    <h3 class="section-subheading text-muted">权威认证，专业认可</h3>
+                </div>
+                
+                <!-- 主要荣誉 -->
+                <div class="row mb-5">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="honor-item">
+                                    <div class="honor-img-container">
+                                        <img src="assets/img/certificates/awards/defense-tech-award.jpg" 
+                                             alt="国防科学技术进步奖"
+                                             class="honor-img"
+                                             onerror="this.onerror=null; this.src='assets/img/certificates/awards/defense-tech-award-placeholder.jpg';">
+                                    </div>
+                                    <div class="honor-content">
+                                        <h5 class="text-center mb-2">国防科学技术进步奖</h5>
+                                        <p class="text-muted small text-center mb-3">多项科技进步奖项</p>
+                                        <p class="text-muted small flex-grow-1">公司在火炸药生产、自动化装配、粒状药混同等技术领域取得重大突破，获得多项国防科学技术进步奖。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-4">
+                                <div class="honor-item">
+                                    <div class="honor-img-container">
+                                        <img src="assets/img/certificates/awards/weapons-industry-award.jpg" 
+                                             alt="兵器工业优秀工程设计奖"
+                                             class="honor-img"
+                                             onerror="this.onerror=null; this.src='assets/img/certificates/awards/weapons-industry-award-placeholder.jpg';">
+                                    </div>
+                                    <div class="honor-content">
+                                        <h5 class="text-center mb-2">兵器工业优秀工程设计一等奖</h5>
+                                        <p class="text-muted small text-center mb-3">战斗部装配生产线</p>
+                                        <p class="text-muted small flex-grow-1">某战斗部的装配生产线凭借创新的设计理念和卓越的技术性能，荣获兵器工业优秀工程设计一等奖。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-4">
+                                <div class="honor-item">
+                                    <div class="honor-img-container">
+                                        <img src="assets/img/certificates/awards/civil-explosive-award.jpg" 
+                                             alt="民爆协会科技奖"
+                                             class="honor-img"
+                                             onerror="this.onerror=null; this.src='assets/img/certificates/awards/civil-explosive-award-placeholder.jpg';">
+                                    </div>
+                                    <div class="honor-content">
+                                        <h5 class="text-center mb-2">民爆协会科技奖</h5>
+                                        <p class="text-muted small text-center mb-3">民爆行业科技奖项</p>
+                                        <p class="text-muted small flex-grow-1">在民爆专用设备研制领域取得显著成果，获得民爆协会科技奖，体现了在民爆行业的技术创新实力。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 资质证书部分 -->
+                <div class="row">
+                    <div class="col-lg-12 mx-auto">
+                        <h4 class="text-center mb-4">资质证书</h4>
+                        <div class="certificate-grid">
+                            <!-- 工程监理资质 -->
+                            <div class="certificate-item">
+                                <div class="certificate-img-container">
+                                    <img src="assets/img/certificates/supervision-cert.jpg" 
+                                         alt="工程监理资质"
+                                         class="certificate-img"
+                                         onerror="this.onerror=null; this.src='assets/img/certificates/supervision-cert-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">工程监理综合甲级资质</h6>
+                                <p class="text-muted small mb-0">行业最高监理资质</p>
+                                <p class="text-muted small mt-2">具备各类工程建设项目的监理能力</p>
+                            </div>
+                            
+                            <!-- 工程设计综合甲级资质 -->
+                            <div class="certificate-item">
+                                <div class="certificate-img-container">
+                                    <img src="assets/img/certificates/design-cert.jpg" 
+                                         alt="工程设计综合甲级资质"
+                                         class="certificate-img"
+                                         onerror="this.onerror=null; this.src='assets/img/certificates/design-cert-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">工程设计综合甲级资质</h6>
+                                <p class="text-muted small mb-0">行业最高设计资质</p>
+                                <p class="text-muted small mt-2">涵盖21个行业的设计能力</p>
+                            </div>
+                            
+                            <!-- 工程咨询资质 -->
+                            <div class="certificate-item">
+                                <div class="certificate-img-container">
+                                    <img src="assets/img/certificates/consulting-cert.jpg" 
+                                         alt="工程咨询资质"
+                                         class="certificate-img"
+                                         onerror="this.onerror=null; this.src='assets/img/certificates/consulting-cert-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">工程咨询资质</h6>
+                                <p class="text-muted small mb-0">专业咨询服务能力</p>
+                                <p class="text-muted small mt-2">提供全过程工程咨询服务</p>
+                            </div>
+                            
+                            <!-- 压力管道设计资质 -->
+                            <div class="certificate-item">
+                                <div class="certificate-img-container">
+                                    <img src="assets/img/certificates/pipeline-cert.jpg" 
+                                         alt="压力管道设计资质"
+                                         class="certificate-img"
+                                         onerror="this.onerror=null; this.src='assets/img/certificates/pipeline-cert-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">压力管道设计资质</h6>
+                                <p class="text-muted small mb-0">特种设备设计资质</p>
+                                <p class="text-muted small mt-2">GA、GB、GC类压力管道设计</p>
+                            </div>
+                            
+                            <!-- 压力容器设计资质 -->
+                            <div class="certificate-item">
+                                <div class="certificate-img-container">
+                                    <img src="assets/img/certificates/vessel-cert.jpg" 
+                                         alt="压力容器设计资质"
+                                         class="certificate-img"
+                                         onerror="this.onerror=null; this.src='assets/img/certificates/vessel-cert-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">压力容器设计资质</h6>
+                                <p class="text-muted small mb-0">A2类压力容器设计</p>
+                                <p class="text-muted small mt-2">特种设备设计制造资质</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 专利证书板块 -->
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <h3 class="patent-section-title">专利证书</h3>
+                        <p class="text-center text-muted mb-4">公司拥有40余项国家发明专利，涵盖弹药装配、火炸药生产、自动化控制等多个技术领域</p>
+                        
+                        <!-- 第一行：5个专利证书 -->
+                        <div class="patent-grid mb-4">
+                            <!-- 专利证书1 -->
+                            <div class="patent-item">
+                                <div class="patent-img-container">
+                                    <img src="assets/img/patents/patent-01.jpg" 
+                                         alt="发明专利证书1"
+                                         class="patent-img"
+                                         onerror="this.onerror=null; this.src='assets/img/patents/patent-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">直角坐标机器人Z轴助力系统</h6>
+                                <p class="text-muted small mb-0">专利号：ZL 2011 1 0389511.3</p>
+                            </div>
+                            
+                            <!-- 专利证书2 -->
+                            <div class="patent-item">
+                                <div class="patent-img-container">
+                                    <img src="assets/img/patents/patent-02.jpg" 
+                                         alt="发明专利证书2"
+                                         class="patent-img"
+                                         onerror="this.onerror=null; this.src='assets/img/patents/patent-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">一种起爆具铸装药自动化生产工艺</h6>
+                                <p class="text-muted small mb-0">专利号：ZL 2012 1 0442177.8</p>
+                            </div>
+                            
+                            <!-- 专利证书3 -->
+                            <div class="patent-item">
+                                <div class="patent-img-container">
+                                    <img src="assets/img/patents/patent-03.jpg" 
+                                         alt="发明专利证书3"
+                                         class="patent-img"
+                                         onerror="this.onerror=null; this.src='assets/img/patents/patent-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">一种用于子弹拆解自动生产线上的子弹引信旋卸装置</h6>
+                                <p class="text-muted small mb-0">专利号：ZL 2013 1 8006514.4</p>
+                            </div>
+                            
+                            <!-- 专利证书4 -->
+                            <div class="patent-item">
+                                <div class="patent-img-container">
+                                    <img src="assets/img/patents/patent-04.jpg" 
+                                         alt="发明专利证书4"
+                                         class="patent-img"
+                                         onerror="this.onerror=null; this.src='assets/img/patents/patent-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">炸药注装药所用药球或药块制备过程中的护理方法</h6>
+                                <p class="text-muted small mb-0">专利号：ZL 2013 1 8002258.1</p>
+                            </div>
+                            
+                            <!-- 专利证书5 -->
+                            <div class="patent-item">
+                                <div class="patent-img-container">
+                                    <img src="assets/img/patents/patent-05.jpg" 
+                                         alt="发明专利证书5"
+                                         class="patent-img"
+                                         onerror="this.onerror=null; this.src='assets/img/patents/patent-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">用于火炸药注装药生产中的炸药药球的制造方法</h6>
+                                <p class="text-muted small mb-0">专利号：ZL 2013 1 8002259.6</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 第二行：5个专利证书 -->
+                        <div class="patent-grid">
+                            <!-- 专利证书6 -->
+                            <div class="patent-item">
+                                <div class="patent-img-container">
+                                    <img src="assets/img/patents/patent-06.jpg" 
+                                         alt="发明专利证书6"
+                                         class="patent-img"
+                                         onerror="this.onerror=null; this.src='assets/img/patents/patent-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">球形物料的输送设备和输送计数设备</h6>
+                                <p class="text-muted small mb-0">专利号：ZL 2013 1 8001638.3</p>
+                            </div>
+                            
+                            <!-- 专利证书7 -->
+                            <div class="patent-item">
+                                <div class="patent-img-container">
+                                    <img src="assets/img/patents/patent-07.jpg" 
+                                         alt="发明专利证书7"
+                                         class="patent-img"
+                                         onerror="this.onerror=null; this.src='assets/img/patents/patent-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">一种椭球形物料的输送和计数设备</h6>
+                                <p class="text-muted small mb-0">专利号：ZL 2013 1 8001479.7</p>
+                            </div>
+                            
+                            <!-- 专利证书8 -->
+                            <div class="patent-item">
+                                <div class="patent-img-container">
+                                    <img src="assets/img/patents/patent-08.jpg" 
+                                         alt="发明专利证书8"
+                                         class="patent-img"
+                                         onerror="this.onerror=null; this.src='assets/img/patents/patent-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">一种用于火炸药注装药生产中固液相炸药的混合设备</h6>
+                                <p class="text-muted small mb-0">专利号：ZL 2012 1 8006852.3</p>
+                            </div>
+                            
+                            <!-- 专利证书9 -->
+                            <div class="patent-item">
+                                <div class="patent-img-container">
+                                    <img src="assets/img/patents/patent-09.jpg" 
+                                         alt="发明专利证书9"
+                                         class="patent-img"
+                                         onerror="this.onerror=null; this.src='assets/img/patents/patent-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">一种烟花爆竹引火线安全灭火装置</h6>
+                                <p class="text-muted small mb-0">专利号：ZL 2017 2 1199143.5</p>
+                            </div>
+                            
+                            <!-- 专利证书10 -->
+                            <div class="patent-item">
+                                <div class="patent-img-container">
+                                    <img src="assets/img/patents/patent-10.jpg" 
+                                         alt="发明专利证书10"
+                                         class="patent-img"
+                                         onerror="this.onerror=null; this.src='assets/img/patents/patent-placeholder.jpg';">
+                                </div>
+                                <h6 class="mb-1">一种旋转式抗爆传送装置</h6>
+                                <p class="text-muted small mb-0">专利号：ZL 2017 2 1199093.0</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="page-section bg-light" id="cta">
+            <div class="container text-center">
+                <h2 class="mb-4">了解更多关于我们的信息？</h2>
+                <p class="text-muted mb-4">欢迎深入了解我们的技术实力和成功案例</p>
+		<div class="d-flex justify-content-center gap-3 flex-wrap">
+    			<a class="btn btn-primary btn-xl text-uppercase" href="services.html">查看业务范围</a>
+    			<a class="btn btn-outline-primary btn-xl text-uppercase" href="index.html#portfolio">查看技术优势</a>
+    			<a class="btn btn-secondary btn-xl text-uppercase" href="contact.html">联系我们</a>
+		</div>
+            </div>
+        </section>
+
+        <!-- Footer 页脚 -->
+        <footer class="footer py-4 bg-dark text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start mb-3 mb-lg-0">
+                        <p class="mb-0">Copyright &copy; 北京五洲中兴机电设备开发有限公司 2025</p>
+                        <p class="small text-muted mb-0 mt-2">地址：北京市西城区西便门内大街85号84幢平房</p>
+                    </div>
+                    <div class="col-lg-4 my-3 my-lg-0 text-center">
+                        <a class="btn btn-outline-light btn-social mx-2" href="#!" aria-label="微信" title="微信公众号">
+                            <i class="fab fa-weixin"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-2" href="#!" aria-label="电话" title="联系电话">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-2" href="#!" aria-label="邮箱" title="电子邮箱">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-light text-decoration-none me-3" href="#!">隐私声明</a>
+                        <span class="text-muted">|</span>
+                        <a class="link-light text-decoration-none ms-3" href="#!">网站地图</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        
+        <script>
+            // 简单的时间线动画
+            document.addEventListener('DOMContentLoaded', function() {
+                const timelineItems = document.querySelectorAll('.timeline-item');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateX(0)';
+                        }
+                    });
+                }, { threshold: 0.1 });
+                
+                timelineItems.forEach((item, index) => {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateX(-20px)';
+                    item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    item.style.transitionDelay = (index * 0.1) + 's';
+                    observer.observe(item);
+                });
+                
+                // 卡片悬停效果增强
+                const cards = document.querySelectorAll('.tech-card, .honor-item, .facility-card, .certificate-item, .patent-item');
+                cards.forEach(card => {
+                    card.addEventListener('mouseenter', function() {
+                        this.style.zIndex = '10';
+                    });
+                    card.addEventListener('mouseleave', function() {
+                        this.style.zIndex = '1';
+                    });
+                });
+
+                // 图片加载错误处理
+                document.querySelectorAll('img').forEach(img => {
+                    img.addEventListener('error', function() {
+                        console.warn('图片加载失败:', this.src);
+                        // 可以在这里添加更多的错误处理逻辑
+                    });
+                    
+                    img.addEventListener('load', function() {
+                        console.log('图片加载成功:', this.src);
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

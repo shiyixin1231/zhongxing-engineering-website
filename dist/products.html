@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="北京五洲中兴机电设备开发有限公司特色产品：抗爆门窗、缺陷检测设备、近红外分析仪、管道阻火装置、喷射器等专业设备。" />
+        <meta name="author" content="北京五洲中兴机电设备开发有限公司" />
+        <title>特色产品 - 北京五洲中兴机电设备开发有限公司</title>
+        
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        
+        <style>
+            /* 保持与about页面一致的通用样式 */
+            .page-section {
+                padding: 6rem 0;
+            }
+            
+            .section-heading {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+            
+            .section-subheading {
+                font-size: 1.2rem;
+                color: #6c757d;
+                margin-bottom: 3rem;
+            }
+            
+            /* 卡片悬停效果 */
+            .tech-card, .honor-item, .facility-card, .product-card {
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .tech-card:hover, .honor-item:hover, .facility-card:hover, .product-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            }
+            
+            .btn-primary {
+                background-color: #007bff;
+                border-color: #007bff;
+                padding: 0.75rem 2rem;
+                font-weight: 600;
+                transition: all 0.3s ease;
+            }
+            
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+                transform: translateY(-2px);
+            }
+            
+            /* 产品卡片样式 */
+            .product-icon {
+                font-size: 2.5rem;
+                color: #007bff;
+                margin-bottom: 1.5rem;
+                display: inline-block;
+            }
+            
+            .product-card {
+                height: 100%;
+                border: 1px solid #e9ecef;
+                border-radius: 10px;
+                overflow: hidden;
+                background: white;
+            }
+            
+            .product-header {
+                background: #007bff;
+                color: white;
+                padding: 1.5rem;
+                text-align: center;
+                position: relative;
+            }
+            
+            .product-badge {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: #ffc107;
+                color: #212529;
+                padding: 0.25rem 0.75rem;
+                border-radius: 20px;
+                font-size: 0.75rem;
+                font-weight: 600;
+            }
+            
+            .product-body {
+                padding: 1.5rem;
+            }
+            
+            .product-features {
+                list-style: none;
+                padding-left: 0;
+                margin-top: 1rem;
+            }
+            
+            .product-features li {
+                padding: 0.5rem 0;
+                border-bottom: 1px dashed #dee2e6;
+                display: flex;
+                align-items: flex-start;
+            }
+            
+            .product-features li:last-child {
+                border-bottom: none;
+            }
+            
+            .product-features li i {
+                color: #28a745;
+                margin-right: 0.75rem;
+                margin-top: 0.25rem;
+                flex-shrink: 0;
+            }
+            
+            .product-specs {
+                background: #f8f9fa;
+                padding: 1rem;
+                border-radius: 8px;
+                margin-top: 1rem;
+            }
+            
+            .spec-item {
+                display: flex;
+                justify-content: space-between;
+                padding: 0.3rem 0;
+                border-bottom: 1px dashed #dee2e6;
+            }
+            
+            .spec-item:last-child {
+                border-bottom: none;
+            }
+            
+            .spec-label {
+                font-weight: 600;
+                color: #495057;
+            }
+            
+            .spec-value {
+                color: #6c757d;
+            }
+            
+            /* 产品详情样式 */
+            .product-detail-box {
+                padding: 2rem;
+                background: white;
+                border-radius: 10px;
+                border: 1px solid #e9ecef;
+                margin-bottom: 2rem;
+                scroll-margin-top: 100px; /* 为了搜索定位时不会被导航栏遮挡 */
+                transition: all 0.3s ease;
+            }
+            
+            .product-detail-box.search-highlight {
+                border-color: #007bff;
+                box-shadow: 0 0 0 3px rgba(0,123,255,0.2);
+                animation: highlight-pulse 2s ease;
+            }
+            
+            @keyframes highlight-pulse {
+                0% { box-shadow: 0 0 0 0 rgba(0,123,255,0.5); }
+                50% { box-shadow: 0 0 0 10px rgba(0,123,255,0); }
+                100% { box-shadow: 0 0 0 0 rgba(0,123,255,0); }
+            }
+            
+            .product-image-container {
+                height: 300px;
+                background: #f8f9fa;
+                border-radius: 8px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1.5rem;
+            }
+            
+            .product-image {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+                transition: transform 0.5s;
+            }
+            
+            .product-image:hover {
+                transform: scale(1.05);
+            }
+            
+            .application-box {
+                border-left: 4px solid #007bff;
+                padding-left: 1.5rem;
+                margin-top: 1.5rem;
+            }
+            
+            /* 统计数据 */
+            .stat-number {
+                font-size: 3rem;
+                font-weight: 700;
+                color: #007bff;
+                line-height: 1;
+            }
+            
+            .stat-item {
+                text-align: center;
+                padding: 1.5rem;
+                background: white;
+                border-radius: 8px;
+                border: 1px solid #e9ecef;
+            }
+            
+            /* 修改后的产品检索功能样式 */
+            .product-search-section {
+                background: white;
+                padding: 3rem 0;
+                border-bottom: 1px solid #e9ecef;
+            }
+            
+            .search-container {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            
+            .search-box {
+                position: relative;
+                margin-bottom: 1rem;
+            }
+            
+            .search-input {
+                width: 100%;
+                padding: 0.8rem 1.2rem;
+                padding-left: 3rem;
+                border: 1px solid #dee2e6;
+                border-radius: 30px;
+                font-size: 1rem;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            }
+            
+            .search-input:focus {
+                outline: none;
+                border-color: #007bff;
+                box-shadow: 0 2px 12px rgba(0,123,255,0.15);
+            }
+            
+            .search-icon {
+                position: absolute;
+                left: 1.2rem;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #6c757d;
+                font-size: 1rem;
+            }
+            
+            .search-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                justify-content: center;
+                margin-top: 1rem;
+            }
+            
+            .search-tag {
+                background: #f8f9fa;
+                border: 1px solid #dee2e6;
+                border-radius: 15px;
+                padding: 0.4rem 0.8rem;
+                font-size: 0.85rem;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                user-select: none;
+                color: #495057;
+            }
+            
+            .search-tag:hover {
+                background: #e9ecef;
+                color: #212529;
+                transform: translateY(-1px);
+            }
+            
+            .search-tag.active {
+                background: #007bff;
+                color: white;
+                border-color: #007bff;
+            }
+            
+            .search-hint {
+                text-align: center;
+                font-size: 0.9rem;
+                color: #6c757d;
+                margin-top: 0.8rem;
+            }
+            
+            /* 搜索结果高亮样式 */
+            .search-highlight {
+                background-color: #fff3cd;
+                padding: 1px 4px;
+                border-radius: 3px;
+                font-weight: 600;
+                color: #856404;
+            }
+            
+            /* 响应式调整 */
+            @media (max-width: 768px) {
+                .page-section {
+                    padding: 4rem 0;
+                }
+                
+                .stat-number {
+                    font-size: 2.5rem;
+                }
+                
+                .product-header {
+                    padding: 1rem;
+                }
+                
+                .product-body {
+                    padding: 1rem;
+                }
+                
+                .product-detail-box {
+                    padding: 1.5rem;
+                }
+                
+                .product-image-container {
+                    height: 200px;
+                }
+                
+                .search-input {
+                    padding: 0.7rem 1rem;
+                    padding-left: 2.8rem;
+                    font-size: 0.9rem;
+                }
+                
+                .search-tag {
+                    padding: 0.3rem 0.6rem;
+                    font-size: 0.8rem;
+                }
+            }
+        </style>
+    </head>
+    
+    <body id="page-top">
+        <!-- Navigation 导航栏 -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/company/company-logo.png" alt="北京五洲中兴机电设备开发有限公司 Logo" height="40" />
+                    <span class="ms-2 d-none d-md-inline" style="font-weight: bold; color: white;">五洲中兴</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    菜单
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">关于我们</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="products.html">特色产品</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Masthead 主横幅 -->
+        <header class="masthead" style="
+            background: url('assets/img/banners/products-banner.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+        ">
+            <div class="container text-center">
+                <div class="masthead-subheading" style="font-size: 1.5rem; margin-bottom: 1rem; color: #fff;">创新驱动，品质卓越</div>
+                <div class="masthead-heading text-uppercase" style="
+                    font-size: 3rem; 
+                    line-height: 1.2; 
+                    margin-bottom: 2rem;
+                    color: #fff;
+                    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+                ">特色产品 · 专业设备</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#product-search" style="
+                    padding: 1rem 2rem;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    background-color: #007bff;
+                    border-color: #007bff;
+                ">快速检索产品</a>
+            </div>
+        </header>
+
+        <!-- 产品统计数据 -->
+        <section class="page-section py-4 bg-light">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <p class="text-muted mb-0">大产品系列</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <p class="text-muted mb-0">成功应用</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <p class="text-muted mb-0">年研发经验</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-item">
+                            <div class="stat-number">多国</div>
+                            <p class="text-muted mb-0">出口国家和地区</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品检索功能 -->
+        <section class="product-search-section" id="product-search">
+            <div class="container">
+                <div class="search-container">
+                    <div class="text-center mb-4">
+                        <h3 class="mb-3">产品快速检索</h3>
+                        <p class="text-muted small">输入关键词或点击标签快速定位到相关产品</p>
+                    </div>
+                    
+                    <!-- 搜索框 -->
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" 
+                               id="productSearch" 
+                               class="search-input" 
+                               placeholder="输入产品关键词搜索，如：抗爆、检测、分析..."
+                               autocomplete="off">
+                    </div>
+                    
+                    <!-- 搜索提示 -->
+                    <div class="search-hint">
+                        输入后按回车或点击标签直接定位到产品
+                    </div>
+                    
+                    <!-- 搜索标签 -->
+                    <div class="search-tags">
+                        <div class="search-tag" data-keyword="抗爆">抗爆防护</div>
+                        <div class="search-tag" data-keyword="检测">智能检测</div>
+                        <div class="search-tag" data-keyword="分析">在线分析</div>
+                        <div class="search-tag" data-keyword="安全">安全保障</div>
+                        <div class="search-tag" data-keyword="管道">管道设备</div>
+                        <div class="search-tag" data-keyword="喷射">喷射输送</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Products 特色产品 -->
+        <section class="page-section" id="main-products">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading text-uppercase">特色产品详情</h2>
+                    <h3 class="section-subheading text-muted">专业设备，安全可靠，技术领先</h3>
+                </div>
+                
+                <!-- 产品1：抗爆门窗 -->
+                <div class="product-detail-box" id="explosion-proof-door">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <div class="product-image-container">
+                                <img src="assets/img/products/explosion-proof-door.jpg" 
+                                     alt="抗爆门窗"
+                                     class="product-image"
+                                     onerror="this.onerror=null; this.src='assets/img/products/explosion-proof-door-placeholder.jpg';">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">抗爆门窗</h3>
+                            <div class="product-badge">国家标准产品</div>
+                            <p class="text-muted mb-4">我公司母公司中国五洲集团是国标图集《抗爆、泄爆门窗及屋盖、墙体建筑构造》的第一主编单位，我公司是该图集的第一参编单位，公司研制的抗爆门窗是该图集中的标准产品。</p>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">产品特点</h6>
+                                    <ul class="product-features">
+                                        <li><i class="fas fa-check-circle"></i>符合国家标准图集</li>
+                                        <li><i class="fas fa-check-circle"></i>多种防护等级可选</li>
+                                        <li><i class="fas fa-check-circle"></i>防爆、防火、防盗一体化</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">技术亮点</h6>
+                                    <ul class="product-features">
+                                        <li><i class="fas fa-bolt"></i>自动抗爆门窗可自动开闭</li>
+                                        <li><i class="fas fa-robot"></i>适用于自动化生产线</li>
+                                        <li><i class="fas fa-user-shield"></i>实现人机隔离，提升安全性</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="application-box">
+                                <h6 class="text-primary mb-2">应用领域</h6>
+                                <p class="text-muted mb-0">广泛应用于兵器、航天、民用爆破器材等行业，并出口到世界多个国家和地区。在传统的抗爆门窗的基础上，我公司开发了自动抗爆门窗，可以实现抗爆门窗的自动开闭，可用于各种自动化生产线，实现人机隔离。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品2：缺陷检测设备 -->
+                <div class="product-detail-box" id="defect-detection">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">缺陷检测设备</h3>
+                            <div class="product-badge">AI智能检测</div>
+                            <p class="text-muted mb-4">基于先进的机器视觉与人工智能技术，我公司构建了一套具备自主学习和持续优化能力的检测系统，能够精准识别多种复杂外观缺陷。</p>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">技术优势</h6>
+                                    <ul class="product-features">
+                                        <li><i class="fas fa-brain"></i>基于AI的自主学习能力</li>
+                                        <li><i class="fas fa-eye"></i>高精度机器视觉识别</li>
+                                        <li><i class="fas fa-sync-alt"></i>持续优化算法模型</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">检测流程</h6>
+                                    <ul class="product-features">
+                                        <li><i class="fas fa-crosshairs"></i>产品精确定位</li>
+                                        <li><i class="fas fa-camera"></i>高清图像采集</li>
+                                        <li><i class="fas fa-robot"></i>智能判定分析</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="application-box">
+                                <h6 class="text-primary mb-2">系统特点</h6>
+                                <p class="text-muted mb-0">通过全自动化检测流程设计，系统实现了从产品定位、图像采集到智能判定的无缝衔接，并形成了一套成熟可靠、可复制的解决方案。可应用于弹药、民爆产品、精密零部件等多个领域的外观缺陷检测。</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <div class="product-image-container">
+                                <img src="assets/img/products/defect-detection.jpg" 
+                                     alt="缺陷检测设备"
+                                     class="product-image"
+                                     onerror="this.onerror=null; this.src='assets/img/products/defect-detection-placeholder.jpg';">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品3：近红外分析仪 -->
+                <div class="product-detail-box" id="nir-analyzer">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <div class="product-image-container">
+                                <img src="assets/img/products/nir-analyzer.jpg" 
+                                     alt="近红外分析仪"
+                                     class="product-image"
+                                     onerror="this.onerror=null; this.src='assets/img/products/nir-analyzer-placeholder.jpg';">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">在线近红外分析仪 NIR6800</h3>
+                            <div class="product-badge">防爆环境适用</div>
+                            <p class="text-muted mb-4">我公司研发的在线近红外分析仪NIR6800采用先进的高精度一体化光学模块设计，能够在线、快速、实时、准确检测产品中的水分和有机成分。</p>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">检测参数</h6>
+                                    <div class="product-specs">
+                                        <div class="spec-item">
+                                            <span class="spec-label">水分含量</span>
+                                            <span class="spec-value">0-100%</span>
+                                        </div>
+                                        <div class="spec-item">
+                                            <span class="spec-label">酒精含量</span>
+                                            <span class="spec-value">0-100%</span>
+                                        </div>
+                                        <div class="spec-item">
+                                            <span class="spec-label">丙酮含量</span>
+                                            <span class="spec-value">0-100%</span>
+                                        </div>
+                                        <div class="spec-item">
+                                            <span class="spec-label">酸值</span>
+                                            <span class="spec-value">0-200mg KOH/g</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">技术规格</h6>
+                                    <div class="product-specs">
+                                        <div class="spec-item">
+                                            <span class="spec-label">检测方式</span>
+                                            <span class="spec-value">在线实时</span>
+                                        </div>
+                                        <div class="spec-item">
+                                            <span class="spec-label">防爆等级</span>
+                                            <span class="spec-value">粉尘防爆</span>
+                                        </div>
+                                        <div class="spec-item">
+                                            <span class="spec-label">分析速度</span>
+                                            <span class="spec-value">＜1秒/样品</span>
+                                        </div>
+                                        <div class="spec-item">
+                                            <span class="spec-label">工作温度</span>
+                                            <span class="spec-value">-20℃~50℃</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="application-box">
+                                <h6 class="text-primary mb-2">适用范围</h6>
+                                <p class="text-muted mb-0">同时该设备符合粉尘防爆环境的使用要求，适应于各种恶劣的检测环境和样品特性。可检测酒精、丙酮、酸值、羟值、黏度、羧基等多种有机成分参数，广泛应用于化工、制药、食品等行业的质量控制。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品4：管道阻火装置 -->
+                <div class="product-detail-box" id="pipe-fire-stopper">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">管道阻火装置</h3>
+                            <div class="product-badge">安全保障设备</div>
+                            <p class="text-muted mb-4">我公司研制的管道阻火装置安装于产品输送管路上，防止危险品输送管道引起的设备间或工房间殉燃事故，该设备已应用于多条生产线。</p>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">安全功能</h6>
+                                    <ul class="product-features">
+                                        <li><i class="fas fa-fire-extinguisher"></i>防止火焰传播</li>
+                                        <li><i class="fas fa-shield-alt"></i>阻止殉燃事故</li>
+                                        <li><i class="fas fa-exclamation-triangle"></i>危险品输送保护</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">安装特点</h6>
+                                    <ul class="product-features">
+                                        <li><i class="fas fa-pipe"></i>管道式安装</li>
+                                        <li><i class="fas fa-tools"></i>易于安装维护</li>
+                                        <li><i class="fas fa-cogs"></i>与生产线集成</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="application-box">
+                                <h6 class="text-primary mb-2">应用效果</h6>
+                                <p class="text-muted mb-0">该装置能够有效隔离火焰传播路径，防止因一处起火引发的连锁反应，大大提高了生产线整体安全性。已成功应用于多条危险品生产线，经受了实际生产环境的考验，证明其可靠性和有效性。</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <div class="product-image-container">
+                                <img src="assets/img/products/pipe-fire-stopper.jpg" 
+                                     alt="管道阻火装置"
+                                     class="product-image"
+                                     onerror="this.onerror=null; this.src='assets/img/products/pipe-fire-stopper-placeholder.jpg';">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品5：喷射器 -->
+                <div class="product-detail-box" id="injector">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <div class="product-image-container">
+                                <img src="assets/img/products/injector.jpg" 
+                                     alt="喷射器"
+                                     class="product-image"
+                                     onerror="this.onerror=null; this.src='assets/img/products/injector-placeholder.jpg';">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <h3 class="mb-3">喷射器系列产品</h3>
+                            <div class="product-badge">定制化设计</div>
+                            <p class="text-muted mb-4">我公司在喷射器研制方面具有丰富经验，根据参数不同研制了系列产品，客户也可根据参数需求进行喷射器定制，该设备已在多条生产线中得到应用。</p>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">定制参数</h6>
+                                    <div class="product-specs">
+                                        <div class="spec-item">
+                                            <span class="spec-label">流量范围</span>
+                                            <span class="spec-value">1-1000 m³/h</span>
+                                        </div>
+                                        <div class="spec-item">
+                                            <span class="spec-label">扬程范围</span>
+                                            <span class="spec-value">10-200 m</span>
+                                        </div>
+                                        <div class="spec-item">
+                                            <span class="spec-label">管径规格</span>
+                                            <span class="spec-value">DN25-DN500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">工作参数</h6>
+                                    <div class="product-specs">
+                                        <div class="spec-item">
+                                            <span class="spec-label">工作压力</span>
+                                            <span class="spec-value">0.1-4.0 MPa</span>
+                                        </div>
+                                        <div class="spec-item">
+                                            <span class="spec-label">输送距离</span>
+                                            <span class="spec-value">10-1000 m</span>
+                                        </div>
+                                        <div class="spec-item">
+                                            <span class="spec-label">介质温度</span>
+                                            <span class="spec-value">-20℃~200℃</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="application-box">
+                                <h6 class="text-primary mb-2">定制服务</h6>
+                                <p class="text-muted mb-0">客户可根据具体参数需求（如：流量，扬程，管径，水压和输送距离等）进行喷射器定制。我公司拥有丰富的设计经验和技术积累，能够根据客户特殊工艺要求，提供最适合的喷射器解决方案，确保设备在生产线中的最佳性能表现。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品优势 -->
+        <section class="page-section bg-light" id="advantages">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading text-uppercase">产品优势</h2>
+                    <h3 class="section-subheading text-muted">专业品质，值得信赖</h3>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card text-center h-100">
+                            <div class="product-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h5 class="mb-3">军工品质</h5>
+                            <p class="text-muted small">传承七十余年军工技术底蕴，所有产品均按照军工标准设计制造，确保质量可靠、性能卓越。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card text-center h-100">
+                            <div class="product-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h5 class="mb-3">技术创新</h5>
+                            <p class="text-muted small">基于公司核心技术积累，产品不断创新升级，融合AI、自动化等先进技术，保持行业领先地位。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card text-center h-100">
+                            <div class="product-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h5 class="mb-3">定制服务</h5>
+                            <p class="text-muted small">提供产品定制化服务，根据客户具体需求调整产品参数和配置，确保最佳适用性和使用效果。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card text-center h-100">
+                            <div class="product-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h5 class="mb-3">安全可靠</h5>
+                            <p class="text-muted small">所有产品设计均以安全为首要考虑，特别是在防爆、防火等安全防护方面达到行业最高标准。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card text-center h-100">
+                            <div class="product-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h5 class="mb-3">完善服务</h5>
+                            <p class="text-muted small">提供从咨询、设计、安装到售后维护的全流程服务，确保客户获得最佳使用体验和长期稳定运行。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="page-section bg-light" id="cta">
+            <div class="container text-center">
+                <h2 class="mb-4">了解更多产品信息？</h2>
+                <p class="text-muted mb-4">欢迎联系我们获取详细产品资料和技术支持</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a class="btn btn-primary btn-xl text-uppercase" href="contact.html">联系我们</a>
+                    <a class="btn btn-outline-primary btn-xl text-uppercase" href="about.html">了解公司</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer 页脚 -->
+        <footer class="footer py-4 bg-dark text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start mb-3 mb-lg-0">
+                        <p class="mb-0">Copyright &copy; 北京五洲中兴机电设备开发有限公司 2025</p>
+                        <p class="small text-muted mb-0 mt-2">地址：北京市西城区西便门内大街85号84幢平房</p>
+                    </div>
+                    <div class="col-lg-4 my-3 my-lg-0 text-center">
+                        <a class="btn btn-outline-light btn-social mx-2" href="#!" aria-label="微信" title="微信公众号">
+                            <i class="fab fa-weixin"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-2" href="#!" aria-label="电话" title="联系电话">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-2" href="#!" aria-label="邮箱" title="电子邮箱">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-light text-decoration-none me-3" href="#!">隐私声明</a>
+                        <span class="text-muted">|</span>
+                        <a class="link-light text-decoration-none ms-3" href="#!">网站地图</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        
+        <script>
+            // 产品检索功能
+            document.addEventListener('DOMContentLoaded', function() {
+                const searchInput = document.getElementById('productSearch');
+                const searchTags = document.querySelectorAll('.search-tag');
+                const productDetailBoxes = document.querySelectorAll('.product-detail-box');
+                
+                // 存储原始内容，用于搜索高亮后恢复
+                const originalContents = new Map();
+                productDetailBoxes.forEach(box => {
+                    originalContents.set(box.id, box.innerHTML);
+                });
+                
+                // 产品数据
+                const products = [
+                    {
+                        id: 'explosion-proof-door',
+                        title: '抗爆门窗',
+                        description: '符合国家标准图集，可实现自动开闭，适用于自动化生产线。',
+                        keywords: '抗爆,门窗,安全,防护,自动,国家标准,防爆,防火,防盗,自动化'
+                    },
+                    {
+                        id: 'defect-detection',
+                        title: '缺陷检测设备',
+                        description: '基于AI机器视觉技术，智能识别外观缺陷，持续优化算法。',
+                        keywords: '缺陷,检测,智能,AI,视觉,机器视觉,自动化,质量控制'
+                    },
+                    {
+                        id: 'nir-analyzer',
+                        title: '在线近红外分析仪',
+                        description: 'NIR6800在线分析仪，实时检测水分和有机成分，防爆环境适用。',
+                        keywords: '近红外,分析仪,在线,检测,水分,成分,防爆,实时'
+                    },
+                    {
+                        id: 'pipe-fire-stopper',
+                        title: '管道阻火装置',
+                        description: '防止危险品输送管道殉燃事故，保障设备间或工房间安全。',
+                        keywords: '管道,阻火,安全,防护,防爆,输送,危险品'
+                    },
+                    {
+                        id: 'injector',
+                        title: '喷射器系列产品',
+                        description: '可根据流量、扬程、管径等参数定制，已在多条生产线中得到应用。',
+                        keywords: '喷射器,输送,定制,参数,流量,扬程,管径'
+                    }
+                ];
+                
+                // 搜索并定位到产品
+                function searchAndNavigate(keyword) {
+                    if (!keyword.trim()) {
+                        // 清空搜索时移除所有高亮
+                        removeAllHighlights();
+                        searchTags.forEach(tag => tag.classList.remove('active'));
+                        return;
+                    }
+                    
+                    const searchTerm = keyword.toLowerCase();
+                    let foundProduct = null;
+                    
+                    // 查找匹配的产品
+                    for (const product of products) {
+                        if (product.title.toLowerCase().includes(searchTerm) ||
+                            product.description.toLowerCase().includes(searchTerm) ||
+                            product.keywords.toLowerCase().includes(searchTerm)) {
+                            foundProduct = product;
+                            break;
+                        }
+                    }
+                    
+                    if (foundProduct) {
+                        // 移除之前的高亮
+                        removeAllHighlights();
+                        
+                        // 滚动到产品位置
+                        scrollToProduct(foundProduct.id, searchTerm);
+                        
+                        // 高亮显示搜索词
+                        highlightSearchTerm(foundProduct.id, searchTerm);
+                        
+                        // 添加视觉高亮效果
+                        const productBox = document.getElementById(foundProduct.id);
+                        if (productBox) {
+                            productBox.classList.add('search-highlight');
+                            setTimeout(() => {
+                                productBox.classList.remove('search-highlight');
+                            }, 3000);
+                        }
+                    } else {
+                        // 没有找到匹配产品，移除高亮
+                        removeAllHighlights();
+                    }
+                }
+                
+                // 滚动到产品位置
+                function scrollToProduct(productId, searchTerm) {
+                    const targetElement = document.getElementById(productId);
+                    if (targetElement) {
+                        // 平滑滚动
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+                
+                // 高亮显示搜索词
+                function highlightSearchTerm(productId, searchTerm) {
+                    const productBox = document.getElementById(productId);
+                    if (!productBox) return;
+                    
+                    // 恢复原始内容
+                    if (originalContents.has(productId)) {
+                        productBox.innerHTML = originalContents.get(productId);
+                    }
+                    
+                    // 高亮文本
+                    const textNodes = getTextNodes(productBox);
+                    textNodes.forEach(node => {
+                        const originalText = node.textContent;
+                        const highlightedText = originalText.replace(
+                            new RegExp(`(${escapeRegExp(searchTerm)})`, 'gi'),
+                            '<span class="search-highlight">$1</span>'
+                        );
+                        
+                        if (highlightedText !== originalText) {
+                            const span = document.createElement('span');
+                            span.innerHTML = highlightedText;
+                            node.parentNode.replaceChild(span, node);
+                        }
+                    });
+                }
+                
+                // 移除所有高亮
+                function removeAllHighlights() {
+                    // 恢复所有产品框的原始内容
+                    productDetailBoxes.forEach(box => {
+                        if (originalContents.has(box.id)) {
+                            box.innerHTML = originalContents.get(box.id);
+                        }
+                        box.classList.remove('search-highlight');
+                    });
+                }
+                
+                // 获取元素中的所有文本节点
+                function getTextNodes(element) {
+                    const walker = document.createTreeWalker(
+                        element,
+                        NodeFilter.SHOW_TEXT,
+                        null,
+                        false
+                    );
+                    
+                    const textNodes = [];
+                    let node;
+                    while (node = walker.nextNode()) {
+                        textNodes.push(node);
+                    }
+                    return textNodes;
+                }
+                
+                // 转义正则表达式特殊字符
+                function escapeRegExp(string) {
+                    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                }
+                
+                // 搜索输入事件
+                let searchTimeout;
+                searchInput.addEventListener('input', function() {
+                    clearTimeout(searchTimeout);
+                    searchTimeout = setTimeout(() => {
+                        searchAndNavigate(this.value);
+                    }, 500);
+                });
+                
+                // 搜索标签点击事件
+                searchTags.forEach(tag => {
+                    tag.addEventListener('click', function() {
+                        const keyword = this.getAttribute('data-keyword');
+                        
+                        // 更新输入框
+                        searchInput.value = keyword;
+                        
+                        // 激活标签
+                        searchTags.forEach(t => t.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        // 执行搜索
+                        searchAndNavigate(keyword);
+                    });
+                });
+                
+                // 回车键搜索
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        searchAndNavigate(this.value);
+                    }
+                });
+                
+                // 清空搜索时重置
+                searchInput.addEventListener('blur', function() {
+                    if (!this.value.trim()) {
+                        searchTags.forEach(tag => tag.classList.remove('active'));
+                        removeAllHighlights();
+                    }
+                });
+            });
+            
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // 卡片悬停效果增强
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.zIndex = '10';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.zIndex = '1';
+                });
+            });
+            
+            // 图片悬停效果
+            const productImages = document.querySelectorAll('.product-image');
+            productImages.forEach(img => {
+                img.addEventListener('mouseenter', function() {
+                    this.parentElement.style.zIndex = '20';
+                });
+                img.addEventListener('mouseleave', function() {
+                    this.parentElement.style.zIndex = '1';
+                });
+            });
+            
+            // 导航栏激活状态
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('#navbarResponsive a');
+                
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
