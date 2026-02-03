@@ -1,0 +1,13 @@
+{
+  "name": "zhongxing-engineering-website",
+  "version": "1.0.0",
+  "description": "北京五洲中兴机电设备开发有限公司官方网站",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["军工", "民爆设备", "机电设备", "安全防护"],
+  "author": "北京五洲中兴机电设备开发有限公司",
+  "license": "MIT"
+}
