@@ -185,23 +185,12 @@
             /* 专利证书板块样式 */
             .patent-section-title {
                 text-align: center;
-                margin: 60px 0 30px;
+                margin: 60px 0 5px;
                 padding-bottom: 15px;
-                border-bottom: 2px solid #007bff;
                 position: relative;
             }
             
-            .patent-section-title::after {
-                content: '';
-                position: absolute;
-                bottom: -2px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 80px;
-                height: 2px;
-                background: #ffc107;
-            }
-            
+          
             /* 专利证书网格 - 5列布局 */
             .patent-grid {
                 display: grid;
@@ -942,7 +931,7 @@
                 <div class="row mt-5">
                     <div class="col-lg-12">
                         <h3 class="patent-section-title">专利证书</h3>
-                        <p class="text-center text-muted mb-4">公司拥有40余项国家发明专利，涵盖弹药装配、火炸药生产、自动化控制等多个技术领域</p>
+                        <p class="text-center text-muted" style="margin-bottom: 3px !important;">公司拥有40余项国家发明专利，涵盖弹药装配、火炸药生产、自动化控制等多个技术领域</p>
                         
                         <!-- 第一行：5个专利证书 -->
                         <div class="patent-grid mb-4">
@@ -1070,19 +1059,6 @@
                             </div>
                         </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="page-section bg-light" id="cta">
-            <div class="container text-center">
-                <h2 class="mb-4">了解更多关于我们的信息？</h2>
-                <p class="text-muted mb-4">欢迎深入了解我们的技术实力和成功案例</p>
-		<div class="d-flex justify-content-center gap-3 flex-wrap">
-    			<a class="btn btn-primary btn-xl text-uppercase" href="services.html">查看业务范围</a>
-    			<a class="btn btn-outline-primary btn-xl text-uppercase" href="index.html#portfolio">查看技术优势</a>
-    			<a class="btn btn-secondary btn-xl text-uppercase" href="contact.html">联系我们</a>
-		</div>
             </div>
         </section>
 
